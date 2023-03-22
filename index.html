@@ -16,7 +16,7 @@
 <body>
     <div class="flex">
         <!--NAV BAR LATERALE-->
-        <div class="side-bar padding-xs black-bg">
+        <div class="side-bar padding-xs black-bg m-zero">
             <!--LOGO-->
             <div class="flex">
                 <img src="./img/logo-small.svg" alt="logo piccolo">
@@ -53,26 +53,54 @@
                 <img class="p-T-2" src="./img/profile.svg" alt="">
             </div>
         </div>
-        <div class="micro-body">
+        <div class="micro-body m-zero">
             <!--HEADER-->
             <header class="upper-bar dark-blue-transparent-bg flex flex-end align-center p-R-1">
                 <!--BARRA SUPERIORE-->
-                    <button class="color-white">EFFETTUA L'UPGRADE</button>
+                    <button class="color-white m-zero">EFFETTUA L'UPGRADE</button>
             </header>
-            
-            <main class="flex dark-blue-bg">
-                <nav class="flex space-around">
-                    <a class="color-grey p-T-1 font-size-s" href="">IN EVIDENZA</a>
-                    <a class="color-grey p-T-1 font-size-s" href="">PODCAST</a>
-                    <a class="color-grey p-T-1 font-size-s" href="">CLASSIFICHE</a>
-                    <a class="color-grey p-T-1 font-size-s" href="">GENERI E MOOD</a> 
+            <!--MAIN-->
+            <main class="dark-blue-bg m-zero">
+                <!--LINK DI NAVIGAZIONE-->
+                <nav class="main-link flex flex-wrap justify-center">
+                    <a class="color-grey p-T-1 p-L-R-1 font-size-s m-zero" href="">IN EVIDENZA</a>
+                    <a class="color-grey p-T-1 p-L-R-1 font-size-s m-zero" href="">PODCAST</a>
+                    <a class="color-grey p-T-1 p-L-R-1 font-size-s m-zero" href="">CLASSIFICHE</a>
+                    <a class="color-grey p-T-1 p-L-R-1 font-size-s m-zero" href="">GENERI E MOOD</a> 
+                    <a class="color-grey p-T-1 p-B-1 p-L-R-1 font-size-s m-zero" href="">NUOVE USCITE</a>
+                    <a class="color-grey p-T-1 p-B-1 p-L-R-1 font-size-s m-zero" href="">SCOPRI</a>
                 </nav>
-                <section></section>
+                <!--ASCOLTATI DI RECENTE-->
+                <div>
+                    <h1 class="color-white p-L-1 m-T-4">Recently played</h1>
+                </div>
+                <!--CANZONI-->
+                <div class="songs flex flex-wrap m-zero">
+                    <div class="song flex flex-col justify-center m-zero">
+                        <img src="./img/metal_lifting.jpg" alt="">
+                        <h3 class="color-white">Heavy Metal</h3>
+                        <small class="color-grey">Subtitle</small>
+                    </div>
+                </div>
             </main>
         </div>
     </div>
     <footer class="flex dark-grey-bg">
-        <div>pippo</div>
+        <!--CONTENITORE PRINCIPALE-->
+        <div class="flex space-between">
+            <!--CONTENITORE DI SINISTRA-->
+            <div class="flex prova justify-center align-center">
+                <div>pippo</div>
+                <div>pippo</div>
+            </div>
+            <!--CONTENITORE AL CENTRO-->
+            <div class="flex flex-col prova justify-center align-center">
+                <div>pippo</div>
+                <div>pippo</div>
+            </div>
+            <!--CONTENITORE A DESTRA-->
+            <div class="flex prova justify-center align-center">pippolo</div>
+        </div>
 
     </footer>
     
