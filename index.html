@@ -15,7 +15,7 @@
 </head>
 <body>
     <!--HEADER-->
-    <header>
+    <header class="flex">
         <!--NAV BAR LATERALE-->
         <div class="side-bar padding-xs black-bg">
             <!--LOGO-->
@@ -25,16 +25,15 @@
             </div>
                 <!--NAV BAR ICONE-->
             <div class="flex flex-wrap justify-center p-T-1">
-                
                 <img class="color-grey p-T-1" src="./img/home.svg" alt=""><small class="color-white display-none">Home</small>
                 <img class="color-grey p-T-1" src="./img/search.svg" alt=""> <small class="color-grey display-none">Cerca</small></span>
                 <img class="color-grey p-T-1" src="./img/libreria.svg" alt=""><small class="color-grey display-none">La tua libreria</small>
             </div>
             <!--PLAYLIST-->
-            <div class="flex">
-                <h3 class="color-white display-none">PLAYLIST</h3>
-                <h3 class="color-grey display-none"><i class="fa-regular fa-square-plus"></i> Crea Playlist</h3>
-                <ul class="playlist display-none">
+            <div class="display-none">
+                <h3 class="color-white">PLAYLIST</h3>
+                <h3 class="color-grey"><i class="fa-regular fa-square-plus"></i> Crea Playlist</h3>
+                <ul class="playlist">
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
@@ -49,13 +48,15 @@
                 </ul>
             </div>
             <!--USER-->
-            <div class="flex flex-col flex-end">
-                <div class="flex">
-                    <span><i class="fa-solid fa-arrow-down color-grey p-T-1"></i><small class="color-grey display-none"> Installa app</small></span>
-                </div>
+            <div class="flex user-conteiner flex-col flex-end justify-center">
+                <img class="color-grey" src="./img/download.svg" alt=""><small class="color-grey display-none"> Installa app</small>
                 <hr class="display-none">
-                <img class="color-grey p-T-1" src="./img/profile.svg" alt="">
+                <img class="p-T-2" src="./img/profile.svg" alt="">
             </div>
+        </div>
+        <!--BARRA SUPERIORE-->
+        <div class="upper-bar dark-blue-transparent-bg flex flex-end align-center p-R-1">
+            <button class="color-white">EFFETTUA L'UPGRADE</button>
         </div>
     </header>
     <main></main>
