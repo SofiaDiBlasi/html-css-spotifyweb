@@ -22,6 +22,17 @@ body {
     display: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+/*FONT*/
+
+.font-size-s {
+    font-size: 10px;
+}
+
+
 /*COLOR*/
 
 .color-white {
@@ -72,6 +83,10 @@ body {
 
 .space-between {
     justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
 }
 
 .align-center {
