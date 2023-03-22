@@ -1,0 +1,179 @@
+/*GENERAL*/
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: red;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.display-none {
+    display: none;
+}
+
+/*COLOR*/
+
+.color-white {
+    color: #ffffff;
+}
+
+.color-green {
+    color: #adff2f;
+}
+
+.color-grey {
+    color: #7d7f84;
+}
+
+.dark-grey-bg {
+    background-color: #282828;    
+}
+
+.dark-blue-bg {
+    background-color: #141922;
+}
+
+.dark-blue-transparent-bg {
+    background-color: rgba(8, 11, 18, 0.5)
+}
+
+.black-bg {
+    background-color: #000000;
+}
+
+/*FLEX*/
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+/*PADDING*/
+
+.padding-xs {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.padding-sm {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.padding-md {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.padding-lg {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.p-L-R-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.p-T-B-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.p-T-1 {
+    padding-top: 1rem;
+}
+
+.p-R-1 {
+    padding-right: 1rem;
+}
+
+.p-B-1 {
+    padding-bottom: 1rem;
+}
+
+.p-L-1 {
+    padding-left: 1rem;
+}
+
+.padding-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.p-L-R-2{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.p-T-B-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.p-T-2 {
+    padding-top: 2rem;
+}
+
+.p-R-2 {
+    padding-right: 2rem;
+}
+
+.p-B-2{
+    padding-bottom: 2rem;
+}
+
+.p-L-2 {
+    padding-left: 2rem;
+}

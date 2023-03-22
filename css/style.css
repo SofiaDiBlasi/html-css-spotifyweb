@@ -1,0 +1,13 @@
+/*HEADER*/
+
+.side-bar {
+    width: 15%;
+    
+    height: 62.5rem;
+    margin: 0;
+}
+
+.playlist {
+    list-style: none;
+    padding: 0;
+}
