@@ -14,77 +14,87 @@
     <title>Spotify Web</title>
 </head>
 <body>
-    <div class="flex">
-        <!--NAV BAR LATERALE-->
-        <div class="side-bar padding-xs black-bg m-zero">
-            <!--LOGO-->
-            <div class="flex">
-                <img src="./img/logo-small.svg" alt="logo piccolo">
-                <img class="display-none" src="./img/logo.svg" alt="logo grande">
-            </div>
-                <!--NAV BAR ICONE-->
-            <div class="flex flex-wrap justify-center p-T-1">
-                <img class="color-grey p-T-1" src="./img/home.svg" alt=""><small class="color-white display-none">Home</small>
-                <img class="color-grey p-T-1" src="./img/search.svg" alt=""> <small class="color-grey display-none">Cerca</small></span>
-                <img class="color-grey p-T-1" src="./img/libreria.svg" alt=""><small class="color-grey display-none">La tua libreria</small>
-            </div>
-            <!--PLAYLIST-->
-            <div class="display-none">
-                <h3 class="color-white">PLAYLIST</h3>
-                <h3 class="color-grey"><i class="fa-regular fa-square-plus"></i> Crea Playlist</h3>
-                <ul class="playlist">
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                </ul>
-            </div>
-            <!--USER-->
-            <div class="flex user-conteiner flex-col flex-end justify-center">
-                <img class="color-grey" src="./img/download.svg" alt=""><small class="color-grey display-none"> Installa app</small>
-                <hr class="display-none">
-                <img class="p-T-2" src="./img/profile.svg" alt="">
-            </div>
-        </div>
-        <div class="micro-body m-zero">
-            <!--HEADER-->
-            <header class="upper-bar dark-blue-transparent-bg flex flex-end align-center p-R-1">
-                <!--BARRA SUPERIORE-->
+    <main>
+        <div class="flex h100">
+            <!--SIDE BAR-->
+             <nav class="side-bar black-bg m-zero">
+                <!--ICONE NAV-->
+                <div class="flex flex-col ">
+                    <img class="icon-size p-B-1 logo-small" src="./img/logo-small.svg" alt="LOGO PICCOLO">
+                    <img class="icon-size p-B-1" src="./img/home.svg" alt="ICONA HOME">
+                    <img class="icon-size p-B-1" src="./img/search.svg" alt="ICONA RICERCA">
+                    <img class="icon-size p-B-1" src="./img/libreria.svg" alt="ICONA LIBRERIA">
+                </div>
+                <!--USER-->
+                <div class="user-box flex flex-col">
+                    <img class="color-grey" src="./img/download.svg" alt=""><small class="color-grey display-none"> Installa app</small>
+                    <img class="user-avatar" src="./img/profile.svg" alt="">
+                </div>
+             </nav>
+             <!--CONTENITORE PRINCIPALE-->
+             <section class="general-conteiner dark-blue-bg m-zero">
+                <!--BARRA IN TRASPARENZA-->
+                <div class="upper-bar flex flex-end dark-blue-transparent-bg">
                     <button class="color-white m-zero">EFFETTUA L'UPGRADE</button>
-            </header>
-            <!--MAIN-->
-            <main class="dark-blue-bg m-zero">
-                <!--LINK DI NAVIGAZIONE-->
-                <nav class="main-link flex flex-wrap justify-center">
-                    <a class="color-grey p-T-1 p-L-R-1 font-size-s m-zero" href="">IN EVIDENZA</a>
-                    <a class="color-grey p-T-1 p-L-R-1 font-size-s m-zero" href="">PODCAST</a>
-                    <a class="color-grey p-T-1 p-L-R-1 font-size-s m-zero" href="">CLASSIFICHE</a>
-                    <a class="color-grey p-T-1 p-L-R-1 font-size-s m-zero" href="">GENERI E MOOD</a> 
-                    <a class="color-grey p-T-1 p-B-1 p-L-R-1 font-size-s m-zero" href="">NUOVE USCITE</a>
-                    <a class="color-grey p-T-1 p-B-1 p-L-R-1 font-size-s m-zero" href="">SCOPRI</a>
-                </nav>
-                <!--ASCOLTATI DI RECENTE-->
-                <div>
-                    <h1 class="color-white p-L-1 m-T-4">Recently played</h1>
                 </div>
-                <!--CANZONI-->
-                <div class="songs flex flex-wrap m-zero">
-                    <div class="song flex flex-col justify-center m-zero">
-                        <img src="./img/metal_lifting.jpg" alt="">
-                        <h3 class="color-white">Heavy Metal</h3>
-                        <small class="color-grey">Subtitle</small>
-                    </div>
-                </div>
-            </main>
+                <!--CONTENUTO-->
+                <section class="content-box flex flex-wrap w100 h100">
+                    <nav>
+                        <a class="color-grey p-T-1 p-L-R-1 font-size-s m-zero" href="">IN EVIDENZA</a>
+                        <a class="color-grey p-T-1 p-L-R-1 font-size-s m-zero" href="">PODCAST</a>
+                        <a class="color-grey p-T-1 p-L-R-1 font-size-s m-zero" href="">CLASSIFICHE</a>
+                        <a class="color-grey p-T-1 p-L-R-1 font-size-s m-zero" href="">GENERI E MOOD</a> 
+                        <a class="color-grey p-T-1 p-B-1 p-L-R-1 font-size-s m-zero" href="">NUOVE USCITE</a>
+                        <a class="color-grey p-T-1 p-B-1 p-L-R-1 font-size-s m-zero" href="">SCOPRI</a>
+                    </nav>
+                    <!--ASCOLTATE DI RECENTE-->
+                    <section class="song-section ">
+                        <h2 class="played color-white">Recently Played</h2>
+                        <!--CANZONI-->
+                        <div class="song-conteiner flex flex-wrap">
+                            <!--CANZONE 1-->
+                            <div class="song-box">
+                                <img src="./img/metal_lifting.jpg" alt="ALMBUM HEAVY METAL">
+                                <h3>Heavy Metal</h3>
+                                <small>Subtitle</small>
+                            </div>
+                            <!--CANZONE 2-->
+                            <div class="song-box">
+                                <img src="./img/metal_lifting.jpg" alt="ALMBUM HEAVY METAL">
+                                <h3>Heavy Metal</h3>
+                                <small>Subtitle</small>
+                            </div>
+                            <!--CANZONE 3-->
+                            <div class="song-box">
+                                <img src="./img/metal_lifting.jpg" alt="ALMBUM HEAVY METAL">
+                                <h3>Heavy Metal</h3>
+                                <small>Subtitle</small>
+                            </div>
+                            <!--CANZONE 4-->
+                            <div class="song-box">
+                                <img src="./img/metal_lifting.jpg" alt="ALMBUM HEAVY METAL">
+                                <h3>Heavy Metal</h3>
+                                <small>Subtitle</small>
+                            </div>
+                            <!--CANZONE 5-->
+                            <div class="song-box">
+                                <img src="./img/metal_lifting.jpg" alt="ALMBUM HEAVY METAL">
+                                <h3>Heavy Metal</h3>
+                                <small>Subtitle</small>
+                            </div>
+                            <!--CANZONE 6-->
+                            <div class="song-box">
+                                <img src="./img/metal_lifting.jpg" alt="ALMBUM HEAVY METAL">
+                                <h3>Heavy Metal</h3>
+                                <small>Subtitle</small>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+             </section>
         </div>
-    </div>
+    </main>
+        
     <footer class="flex dark-grey-bg">
         <!--CONTENITORE PRINCIPALE-->
         <div class="flex space-between">
@@ -101,9 +111,6 @@
             <!--CONTENITORE A DESTRA-->
             <div class="flex prova justify-center align-center">pippolo</div>
         </div>
-
     </footer>
-    
-   
 </body>
 </html>

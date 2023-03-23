@@ -126,7 +126,7 @@ a {
     padding-right: 1rem;
 }
 
-.padding-lg {
+.padding-1 {
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
@@ -200,4 +200,14 @@ a {
 
 .m-T-4 {
     margin-top: 4rem;
+}
+
+/*H AND W*/
+
+.h100 {
+    height: 100%;
+}
+
+.w100 {
+    width: 100%;    
 }
