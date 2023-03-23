@@ -20,14 +20,14 @@
              <nav class="side-bar black-bg m-zero">
                 <!--ICONE NAV-->
                 <div class="flex flex-col ">
-                    <img class="icon-size p-B-1 logo-small" src="./img/logo-small.svg" alt="LOGO PICCOLO">
-                    <img class="icon-size p-B-1" src="./img/home.svg" alt="ICONA HOME">
-                    <img class="icon-size p-B-1" src="./img/search.svg" alt="ICONA RICERCA">
-                    <img class="icon-size p-B-1" src="./img/libreria.svg" alt="ICONA LIBRERIA">
+                    <img class="icon-size logo-small" src="./img/logo-small.svg" alt="LOGO PICCOLO">
+                    <img class="icon-size" src="./img/home.svg" alt="ICONA HOME">
+                    <img class="icon-size" src="./img/search.svg" alt="ICONA RICERCA">
+                    <img class="icon-size" src="./img/libreria.svg" alt="ICONA LIBRERIA">
                 </div>
                 <!--USER-->
-                <div class="user-box flex flex-col">
-                    <img class="color-grey" src="./img/download.svg" alt=""><small class="color-grey display-none"> Installa app</small>
+                <div class="user-box flex flex-col flex-end">
+                    <img class="user-arrow p-B-1" src="./img/download.svg" alt=""><small class="color-grey display-none"> Installa app</small>
                     <img class="user-avatar" src="./img/profile.svg" alt="">
                 </div>
              </nav>
@@ -35,7 +35,7 @@
              <section class="general-conteiner dark-blue-bg m-zero">
                 <!--BARRA IN TRASPARENZA-->
                 <div class="upper-bar flex flex-end dark-blue-transparent-bg">
-                    <button class="color-white m-zero">EFFETTUA L'UPGRADE</button>
+                    <button class="color-white">EFFETTUA L'UPGRADE</button>
                 </div>
                 <!--CONTENUTO-->
                 <section class="content-box flex flex-wrap w100 h100">
@@ -49,7 +49,9 @@
                     </nav>
                     <!--ASCOLTATE DI RECENTE-->
                     <section class="song-section ">
-                        <h2 class="played color-white">Recently Played</h2>
+                        <div class="flex">
+                            <h2 class="played color-white flex-start m-zero">Recently Played</h2>
+                        </div>
                         <!--CANZONI-->
                         <div class="song-conteiner flex flex-wrap">
                             <!--CANZONE 1-->
@@ -60,32 +62,32 @@
                             </div>
                             <!--CANZONE 2-->
                             <div class="song-box">
-                                <img src="./img/metal_lifting.jpg" alt="ALMBUM HEAVY METAL">
-                                <h3>Heavy Metal</h3>
-                                <small>Subtitle</small>
+                                <img src="./img/stranger.jpeg" alt="STRANGER THINGS">
+                                <h3>Stranger Things, Vol 1 (a Netflix Original Series Soundtrack)</h3>
+                                <small>Kyle Dixon & Michael Stein</small>
                             </div>
                             <!--CANZONE 3-->
                             <div class="song-box">
-                                <img src="./img/metal_lifting.jpg" alt="ALMBUM HEAVY METAL">
-                                <h3>Heavy Metal</h3>
+                                <img src="./img/aquietplace.jpeg" alt="QUITE PLACE">
+                                <h3>A Quiet Place</h3>
                                 <small>Subtitle</small>
                             </div>
                             <!--CANZONE 4-->
                             <div class="song-box">
-                                <img src="./img/metal_lifting.jpg" alt="ALMBUM HEAVY METAL">
-                                <h3>Heavy Metal</h3>
+                                <img src="./img/split.jpeg" alt="SPLIT">
+                                <h3>Split</h3>
                                 <small>Subtitle</small>
                             </div>
                             <!--CANZONE 5-->
                             <div class="song-box">
-                                <img src="./img/metal_lifting.jpg" alt="ALMBUM HEAVY METAL">
-                                <h3>Heavy Metal</h3>
+                                <img src="./img/cure.jpeg" alt="WELLNESS">
+                                <h3>A cure for wellness</h3>
                                 <small>Subtitle</small>
                             </div>
                             <!--CANZONE 6-->
                             <div class="song-box">
-                                <img src="./img/metal_lifting.jpg" alt="ALMBUM HEAVY METAL">
-                                <h3>Heavy Metal</h3>
+                                <img src="./img/sinister.jpeg" alt="SINISTER">
+                                <h3>Sinister</h3>
                                 <small>Subtitle</small>
                             </div>
                         </div>
@@ -100,8 +102,18 @@
         <div class="flex space-between">
             <!--CONTENITORE DI SINISTRA-->
             <div class="flex prova justify-center align-center">
-                <div>pippo</div>
-                <div>pippo</div>
+                <div>
+                    <img class="footer-album" src="./img/sinister.jpeg" alt="sinister album">
+                </div>
+                <div class="flex flex-col">
+                    <h5>Sinister</h5>
+                    <small>Brano</small>
+                    <small>Nome</small>
+                </div>
+                <div class="flex flex-col">
+                    <i class="fa-regular fa-heart color-grey"></i>
+                    <i class="fa-regular fa-folder color-grey"></i>
+                </div>
             </div>
             <!--CONTENITORE AL CENTRO-->
             <div class="flex flex-col prova justify-center align-center">
