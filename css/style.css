@@ -1,18 +1,3 @@
-/*
-
-.playlist {
-    list-style: none;
-    padding: 0;
-}
-
-.user-conteiner {
-    height: 45.625rem;
-}
-*/
-
-.general-conteiner {
-    height: 100%;
-}
 
 /*MAIN*/
 
@@ -22,6 +7,7 @@ main {
 
 .side-bar {
     width: 3.125rem;
+    height: 100%;
 }
 
 .icon-size {
@@ -29,12 +15,26 @@ main {
     padding-bottom: 0.5rem;
 }
 
+.playlist {
+    width: 100%;
+    height: 50%;
+    line-height: 2.1875rem;
+    overflow-y: auto;
+    display: none;
+}
+
+.bottone-playlist {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 2.5rem;
+}
+
 .logo-small {
     margin-top: .3125rem;
 }
 
-.user-box {
-    height: 34.375rem;
+.logo-big {
+    display: none;
 }
 
 .user-avatar {
@@ -45,6 +45,10 @@ main {
 
 .user-arrow  {
     width: 30%;
+}
+
+.installa-app {
+    display: none;
 }
 
 .general-conteiner {
@@ -86,7 +90,7 @@ button {
     width: 50%;
     padding-left: .3125rem;
     padding-right: .3125rem;
-    padding-bottom: .3125rem;
+    padding-bottom: .625rem;
 }
 
 .song-box img {
@@ -101,6 +105,37 @@ button {
     color: grey;
 }
 
+.personal-for-user {
+    width: 50%;
+    padding-left: .3125rem;
+    padding-right: .3125rem;
+    padding-bottom: .3125rem;
+}
+
+.personal-for-user img {
+    width: 100%;
+}
+
+.down-section-text{
+    text-align: start;
+}
+
+.down-section-text h1 {
+    font-size: 20px;
+}
+
+.artisti-popolari {
+    width: 50%;
+    padding-left: .3125rem;
+    padding-right: .3125rem;
+    padding-bottom: .3125rem;
+}
+
+.artisti-popolari img {
+    width: 100%;
+    border-radius: 50%;
+}
+
 /*FOOTER*/
 
 footer {
@@ -108,13 +143,327 @@ footer {
     height: 5.625rem;
 }
 
-.footer-album {
+.album-box {
+    width: 80%;
+}
+
+.album-song {
+    width: 80%;
+    display: block;
+}
+
+.album-info {
     width: 50%;
 }
 
-.prova {
-    height: 50px;
-    width: 150px;
+.album-icon {
+    width: 50%;
+}
+
+.album-icon i {
+    margin-left: .3125rem;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.end-conteiner {
     margin: 0;
     padding: 0;
+}
+
+.left-conteiner {
+    width: 25%;
+    height:100%;
+    padding-left: 10px;
+}
+
+.center-conteiner {
+    width: 50%;
+    height: 100%;
+}
+
+.center-conteiner span {
+    font-size: 10px;
+}
+
+.play-conteiner i {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-time {
+    height: 50%;
+}
+
+.conteiner-right {
+    width: 25%;
+    height: 100%;
+    padding: 10px;
+}
+
+/*RESPONSIVE MOBILE*/
+@media screen and (min-width: 480px) {
+    .side-bar {
+        width: 40%;
+    }
+
+    button {
+        height: 40px;
+        width: 12.5rem;
+        background-color: transparent;
+        border-color: white;
+        border-radius: 25px;
+        align-self: center;
+        margin: 0 auto;
+    }
+    .icon-size {
+        width: 15%;
+        padding-bottom: 0.5rem;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    .logo-small {
+        display: none;
+    }
+
+    .logo-big {
+        display: block;
+        width: 60%;
+        margin-top: 1rem;
+    }
+
+    .playlist {
+        display: block;
+        font-size: 10px;
+        margin-left: 1rem;
+    }
+    
+    .bottone-playlist {
+        font-size: 1rem;
+    }
+
+    .side-bar :first-child {
+        justify-content: left;
+    }
+
+    .playlist a {
+        display: block;
+    }
+
+    .user-avatar {
+        width: 15%;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    .user-arrow {
+        width: 15%;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    .installa-app {
+        display: block;
+    }
+
+    .hr {
+        margin: 1rem;
+    }
+
+}
+
+
+
+
+/*RESPONSIVE TABLET*/
+@media screen and (min-width: 768px) {
+    .side-bar {
+        width: 40%;
+    }
+
+    button {
+        height: 40px;
+        width: 12.5rem;
+        background-color: transparent;
+        border-color: white;
+        border-radius: 25px;
+        align-self: center;
+        margin: 0 auto;
+    }
+    .icon-size {
+        width: 9%;
+        padding-bottom: 0.5rem;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    .logo-small {
+        display: none;
+    }
+
+    .logo-big {
+        display: block;
+        width: 60%;
+        margin-top: 1rem;
+    }
+
+    .playlist {
+        display: block;
+        font-size: 10px;
+        margin-left: 1rem;
+    }
+    
+    .bottone-playlist {
+        font-size: 1rem;
+    }
+
+    .side-bar :first-child {
+        justify-content: left;
+    }
+
+    .playlist a {
+        display: block;
+    }
+
+    .user-avatar {
+        width: 9%;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    .user-arrow {
+        width: 15%;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    .installa-app {
+        display: block;
+    }
+
+    .hr {
+        margin: 1rem;
+    }
+
+    .song-box {
+        width: 25%;
+        padding-left: .3125rem;
+        padding-right: .3125rem;
+        padding-bottom: .625rem;
+        margin: 0;
+    }
+    .personal-for-user {
+        width: 25%;
+        padding-left: .3125rem;
+        padding-right: .3125rem;
+        padding-bottom: .3125rem;
+        margin: 0;
+    }
+    .artisti-popolari {
+        width: 25%;
+        padding-left: .3125rem;
+        padding-right: .3125rem;
+        padding-bottom: .3125rem;
+        margin: 0;
+    }
+
+}
+
+/*RESPONSIVE DESKTOP*/
+@media screen and (min-width: 992px) {
+    .side-bar {
+        width: 40%;
+    }
+
+    button {
+        height: 40px;
+        width: 12.5rem;
+        background-color: transparent;
+        border-color: white;
+        border-radius: 25px;
+        align-self: center;
+        margin: 0 auto;
+    }
+    .icon-size {
+        width: 9%;
+        padding-bottom: 0.5rem;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    .logo-small {
+        display: none;
+    }
+
+    .logo-big {
+        display: block;
+        width: 60%;
+        margin-top: 1rem;
+    }
+
+    .playlist {
+        display: block;
+        font-size: 10px;
+        margin-left: 1rem;
+    }
+    
+    .bottone-playlist {
+        font-size: 1rem;
+    }
+
+    .side-bar :first-child {
+        justify-content: left;
+    }
+
+    .playlist a {
+        display: block;
+    }
+
+    .user-avatar {
+        width: 9%;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    .user-arrow {
+        width: 15%;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    .installa-app {
+        display: block;
+    }
+
+    .hr {
+        margin: 1rem;
+    }
+
+    .song-box {
+        width: calc(100% / 6);
+        padding-left: .3125rem;
+        padding-right: .3125rem;
+        padding-bottom: .625rem;
+        margin: 0;
+    }
+    .personal-for-user {
+        width: calc(100% / 6);
+        padding-left: .3125rem;
+        padding-right: .3125rem;
+        padding-bottom: .3125rem;
+        margin: 0;
+    }
+    .artisti-popolari {
+        width: calc(100% / 6);
+        padding-left: .3125rem;
+        padding-right: .3125rem;
+        padding-bottom: .3125rem;
+        margin: 0;
+    }
+
+
 }

@@ -21,18 +21,35 @@
                 <!--ICONE NAV-->
                 <div class="flex flex-col ">
                     <img class="icon-size logo-small" src="./img/logo-small.svg" alt="LOGO PICCOLO">
+                    <img class="icon-size logo-big " src="./img/logo.svg" alt="logo grande">
                     <img class="icon-size" src="./img/home.svg" alt="ICONA HOME">
                     <img class="icon-size" src="./img/search.svg" alt="ICONA RICERCA">
                     <img class="icon-size" src="./img/libreria.svg" alt="ICONA LIBRERIA">
                 </div>
-                <!--USER-->
-                <div class="user-box flex flex-col flex-end">
-                    <img class="user-arrow p-B-1" src="./img/download.svg" alt=""><small class="color-grey display-none"> Installa app</small>
-                    <img class="user-avatar" src="./img/profile.svg" alt="">
+                <!--PLAYLIST-->
+                <div class="playlist">
+                    <h3 class="color-white">PLAYLIST</h3>
+                    <span class="bottone-playlist color-grey"><i class="fa-solid fa-square-plus"></i><strong>Crea Playlist</strong></span>
+                    <a class="color-grey">Nome Playlist</a>
+                    <a class="color-grey">Nome Playlist</a>
+                    <a class="color-grey">Nome Playlist</a>
+                    <a class="color-grey">Nome Playlist</a>
+                    <a class="color-grey">Nome Playlist</a>
                 </div>
-             </nav>
+                <!--USER-->
+                <div class="user-box flex flex-col">
+                    <div class="flex">
+                        <img class="user-arrow p-B-1" src="./img/download.svg" alt=""><small class="color-grey installa-app"> Installa app</small>
+                    </div>
+                    <hr class="hr installa-app">
+                    <div class="flex">
+                        <img class="user-avatar" src="./img/profile.svg" alt=""><span class="color-white installa-app">John Doe</span>
+                    </div>
+                </div>
+            </nav>
+
              <!--CONTENITORE PRINCIPALE-->
-             <section class="general-conteiner dark-blue-bg m-zero">
+            <section class="general-conteiner dark-blue-bg m-zero">
                 <!--BARRA IN TRASPARENZA-->
                 <div class="upper-bar flex flex-end dark-blue-transparent-bg">
                     <button class="color-white">EFFETTUA L'UPGRADE</button>
@@ -50,7 +67,7 @@
                     <!--ASCOLTATE DI RECENTE-->
                     <section class="song-section ">
                         <div class="flex">
-                            <h2 class="played color-white flex-start m-zero">Recently Played</h2>
+                            <h2 class="played color-white flex-start m-zero p-B-1">Recently Played</h2>
                         </div>
                         <!--CANZONI-->
                         <div class="song-conteiner flex flex-wrap">
@@ -91,37 +108,102 @@
                                 <small>Subtitle</small>
                             </div>
                         </div>
+                        <!--CREATO PERS. PER USER-->
+                        <section class="p-T-2">
+                            <div  class="down-section-text">
+                                <h1 class="color-white p-B-1">Creato per Jhon Doe</h1>
+                                <small class="color-grey p-B-1">Più ascolti, più accurati saranno i suggerimenti</small>
+                            </div>
+                            <div class="flex flexWrap p-T-1">
+                                <div class="personal-for-user">
+                                        <img src="./img/radar.jpeg" alt="">
+                                        <h3 class="color-white">Release Radar</h3>
+                                </div>
+                                <div class="personal-for-user">
+                                    <img src="./img/mixdaily.jpeg" alt="">
+                                    <h3 class="color-white">Daily Mix 1</h3>
+                                </div>
+                            </div>
+                        </section>
+                        <!--ARTISTI POPOLARI-->
+                        <section class="p-T-2">
+                            <div class="down-section-text">
+                                <h1 class="color-white p-B-1">Artisti più popolari</h1>
+                                <small class="color-grey p-B-1">Più ascolti, più accurati saranno i suggerimenti</small>
+                            </div>
+                            <div class="flex flex-wrap p-T-1">
+                                <div class="artisti-popolari">
+                                    <img src="./img/youg.jpeg" alt="">
+                                    <h3 class="color-white">Lana del Rey</h3>
+                                </div>
+                                <div class="artisti-popolari">
+                                    <img src="./img/einaudi.jpeg" alt="">
+                                    <h3 class="color-white">Ludovico Einaudi</h3>
+                                </div>
+                            </div>
+                        </section>
                     </section>
                 </section>
-             </section>
+            </section>
         </div>
     </main>
         
     <footer class="flex dark-grey-bg">
         <!--CONTENITORE PRINCIPALE-->
-        <div class="flex space-between">
+        <div class="flex space-between m-zero space-around h100 w100">
             <!--CONTENITORE DI SINISTRA-->
-            <div class="flex prova justify-center align-center">
-                <div>
-                    <img class="footer-album" src="./img/sinister.jpeg" alt="sinister album">
+            <div class="left-conteiner flex end-conteiner justify-center align-center">
+                <div class="flex justify-center">
+                    <div class="album-box">
+                        <img class="album-song" src="./img/sinister.jpeg" alt="sinister album">
+                    </div>
                 </div>
-                <div class="flex flex-col">
-                    <h5>Sinister</h5>
-                    <small>Brano</small>
-                    <small>Nome</small>
+                <div class="album-info flex flex-col">
+                    <h5 class="color-white">Sinister</h5>
+                    <div class="flex flex-row">
+                        <small class="color-grey">Brano</small>
+                        <small class="color-grey">Nome</small>   
+                    </div>
                 </div>
-                <div class="flex flex-col">
+                <div class="album-icon flex flex-col align-center">
                     <i class="fa-regular fa-heart color-grey"></i>
                     <i class="fa-regular fa-folder color-grey"></i>
                 </div>
             </div>
             <!--CONTENITORE AL CENTRO-->
-            <div class="flex flex-col prova justify-center align-center">
-                <div>pippo</div>
-                <div>pippo</div>
+            <div class="center-conteiner flex end-conteiner justify-center align-center">
+                <!--PLAY CANZONE-->
+                <div class="play-conteiner flex w100 h100">
+                    <i class="fa-solid fa-shuffle color-white"></i>
+                    <i class="fa-solid fa-backward-step color-white"></i>
+                    <i class="fa-sharp fa-regular fa-circle-play color-white"></i>
+                    <i class="fa-solid fa-forward-step color-white"></i>
+                    <i class="fa-solid fa-rotate-left color-white"></i>
+                </div>
+                <div>
+                    <!--TEMPO DI RIPRODUZIONE-->
+                    <div class="play-time color-white w100 align-center">
+                        <div class="flex align-center">
+                           <span>0:25</span> 
+                        </div>
+                    </div>
+                    <div class="color-white"><span>4:35</span></div>
+                </div>
             </div>
             <!--CONTENITORE A DESTRA-->
-            <div class="flex prova justify-center align-center">pippolo</div>
+            <div class="conteiner-right flex end-conteiner align-center">
+                <div>
+                    <div>
+                        <i class="fa-solid fa-bars color-white"></i>
+                        <i class="fa-solid fa-desktop color-white"></i>
+                        <i class="fa-solid fa-volume-high color-white"></i>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
